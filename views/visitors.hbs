@@ -1,7 +1,10 @@
 <table>
+    <thead>
     <th>id</th>
     <th>Name</th>
     <th>Visits</th>
+    </thead>
+    <tbody>
     {{#each visitors }}
     <tr>
         <td>{{visitors}}</td>
@@ -10,4 +13,6 @@
         <td>{{count}}</td>
     </tr>
     {{/each}}
+
+    </tbody>
 </table>
