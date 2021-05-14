@@ -26,7 +26,7 @@ const countVisitor = async (req, res) =>  {
 
     const visitors = await Visitor.find().lean();
     console.log('visitors: ', visitors)
-    res.render('visitors', visitors)
+    res.render('visitors', {visitors})
 
 }
 
