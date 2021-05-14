@@ -18,6 +18,7 @@ const countVisitor = async (req, res) =>  {
   
     if(visitor === null) {
         visitor = new Visitor({name : req.query.name || "Anónimo"} )
+        
         await visitor.save()
     }
 

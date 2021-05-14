@@ -1,13 +1,13 @@
 const express = require('express');
 const dotenv = require('dotenv');
 const app = express();
-const router= require('./Route');
+const router= require('./src/Route');
 const morgan = require('morgan');
 const path = require('path')
 const hbs = require('express-handlebars')
 
 //database
-require('./DataBase')
+require('./src/DataBase')
 //settings handlebars
 app.set('views', path.join(__dirname, 'views'))
 

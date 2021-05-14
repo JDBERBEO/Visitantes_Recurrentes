@@ -13,7 +13,7 @@ const Visitor = new Schema({
     },
     count : {
         type: Number,
-        default: 1,
+        default: 0,
     },
 })
 
